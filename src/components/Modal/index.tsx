@@ -12,9 +12,10 @@ import {
 
 interface Props {
   closeModal: any;
+  handleConfirm: () => void;
 }
 
-export function Modal({ closeModal }: Props) {
+export function Modal({ closeModal, handleConfirm }: Props) {
   return (
     <Container>
       <Content>
@@ -24,8 +25,8 @@ export function Modal({ closeModal }: Props) {
           <ButtonClose onClick={() => closeModal(false)}>X</ButtonClose>
         </Div>
         <Footer>
-          <ButtonConfirm>Confirmar</ButtonConfirm>
-          <ButtonCancel onClick={() => closeModal(false)}>
+          <ButtonConfirm onClick={() => handleConfirm()}>Confirmar</ButtonConfirm>
+          <ButtonCancel onClick={() => closeModal(false)} >
             Cancelar
           </ButtonCancel>
         </Footer>

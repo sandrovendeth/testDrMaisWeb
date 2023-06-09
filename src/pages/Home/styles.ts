@@ -19,9 +19,35 @@ export const Input = styled.input`
   font-size: 20px;
   border-radius: 10px;
   margin-top: 50px;
+  ::placeholder {
+    font-size: 1px
+  }
 `;
 export const List = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
+export const View = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-top: 24px;
+`;
+export const ButtonAdd = styled.button`
+  background-color: #4caf50;
+  margin-top: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 16px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+`;
+
+
